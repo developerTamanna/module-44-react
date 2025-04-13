@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Link from './Link';
 
-
+import { CiMenuBurger } from "react-icons/ci";
+import { IoIosClose } from 'react-icons/io';
 
 const navigationData = [
     {
@@ -32,14 +33,31 @@ const navigationData = [
   ];
   
 const Navbar = () => {
+
+
+    const [open, setOpen] = useState(false);
+    
+   const links =    navigationData.map(route=><Link
+    key={route.id}
+    route={route}
+    ></Link>)
     return (
-        <nav>
+        <nav className='flex justify-between mx-10'>
+         <span className='' onClick={()=>setOpen(!open)}>
+
+          {
+            open ? <IoIosClose className='md:hidden'></IoIosClose> :  < CiMenuBurger className='md:hidden' />
+          }
+       <ul>
+        {links}
+       </ul>
+        <h1 className='ml-4'>My navBar</h1>
+        
+         </span>
+           
           <ul className='flex'>
             {
-                navigationData.map(route=><Link
-                key={route.id}
-                route={route}
-                ></Link>)
+             links
             }
         </ul>
           {/* <ul className='flex'>
@@ -59,6 +77,7 @@ const Navbar = () => {
                    <li className='mr-10'>  <a href="/contact">contact</a></li>
               
             </ul> */}
+            <button>sign in</button>
         </nav>
     );
 };
