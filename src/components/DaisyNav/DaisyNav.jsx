@@ -2,7 +2,7 @@ import React from 'react';
 
 const DaisyNav = () => {
     return (
-        <div>
+        <div className='mt-20'>
             <div className="navbar bg-base-100 shadow-sm">
   <div className="navbar-start">
     <div className="dropdown">
