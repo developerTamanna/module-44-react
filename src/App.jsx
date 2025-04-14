@@ -8,11 +8,15 @@ import Navbar from './components/Navbar/Navbar'
 import { Suspense } from 'react'
 import PricingOptions from './components/PricingOptions/PricingOptions'
 import ResultChat from './components/DaisyPricing/ResultChart/ResultChat'
+import axios from 'axios'
+import MarksChart from './components/MarksChart/MarksChart'
 
 
 const pricingPromise = fetch('pricingData.json').then(res=>res.json())
 
 
+
+const markPromise = axios.get('markData.json')
 
 
 
@@ -34,7 +38,13 @@ function App() {
    ></PricingOptions>
     </Suspense>
 
+   <Suspense fallback={<span className="loading loading-spinner loading-lg"></span>}>
 
+    <MarksChart
+    
+    markPromise ={markPromise}
+    ></MarksChart>
+   </Suspense>
      <ResultChat></ResultChat>
 
 
