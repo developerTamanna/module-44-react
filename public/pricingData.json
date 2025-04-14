@@ -4,6 +4,7 @@
       "price": 50000,
       "Description": "A simple and efficient light aircraft for beginners.",
       "id": 1,
+      "popular": true,
       "features": ["2 seats", "Single Engine", "Manual Navigation", "Low Fuel Consumption"]
     },
     {
@@ -33,6 +34,13 @@
       "Description": "High performance entry-level private aircraft.",
       "id": 5,
       "features": ["5 seats", "Twin Engine", "Modern Cockpit Display", "Luxury Interior"]
+    },
+    {
+      "name": "Basic Plane F",
+      "price": 50000,
+      "Description": "Good performance entry-level Personal aircraft.",
+      "id": 6,
+      "features": ["6 seats", "Twin Engine", "Digital Cockpit Display", "interesting Interior"]
     }
   ]
   
