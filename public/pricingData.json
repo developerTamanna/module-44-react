@@ -1,0 +1,38 @@
+[
+    {
+      "name": "Basic Plane A",
+      "price": 50000,
+      "Description": "A simple and efficient light aircraft for beginners.",
+      "id": 1,
+      "features": ["2 seats", "Single Engine", "Manual Navigation", "Low Fuel Consumption"]
+    },
+    {
+      "name": "Basic Plane B",
+      "price": 75000,
+      "Description": "Perfect for short distance travel with basic comfort.",
+      "id": 2,
+      "features": ["4 seats", "Twin Engine", "Auto Pilot Support", "Enhanced Stability"]
+    },
+    {
+      "name": "Basic Plane C",
+      "price": 90000,
+      "Description": "Reliable and safe — ideal for flight training programs.",
+      "id": 3,
+      "features": ["3 seats", "Single Engine", "Advanced GPS", "Parachute System"]
+    },
+    {
+      "name": "Basic Plane D",
+      "price": 120000,
+      "Description": "Designed for adventure enthusiasts and personal use.",
+      "id": 4,
+      "features": ["2 seats", "Turbo Engine", "Weather Radar", "Emergency Beacon"]
+    },
+    {
+      "name": "Basic Plane E",
+      "price": 150000,
+      "Description": "High performance entry-level private aircraft.",
+      "id": 5,
+      "features": ["5 seats", "Twin Engine", "Modern Cockpit Display", "Luxury Interior"]
+    }
+  ]
+  

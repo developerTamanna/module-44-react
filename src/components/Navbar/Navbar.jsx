@@ -43,19 +43,19 @@ const Navbar = () => {
     ></Link>)
     return (
         <nav className='flex justify-between mx-10'>
-         <span className='' onClick={()=>setOpen(!open)}>
+         <span className='flex items-center' onClick={()=>setOpen(!open)}>
 
           {
             open ? <IoIosClose className='md:hidden'></IoIosClose> :  < CiMenuBurger className='md:hidden' />
           }
-       <ul>
+       <ul className={`md:hidden absolute duration-1000 bg-gray-300 ${open? 'top-13':'-top-40' }`}>
         {links}
        </ul>
         <h1 className='ml-4'>My navBar</h1>
         
          </span>
            
-          <ul className='flex'>
+          <ul className='md:flex hidden'>
             {
              links
             }
