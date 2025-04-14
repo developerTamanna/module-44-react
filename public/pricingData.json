@@ -19,6 +19,7 @@
       "price": 90000,
       "Description": "Reliable and safe — ideal for flight training programs.",
       "id": 3,
+      "popular": true,
       "features": ["3 seats", "Single Engine", "Advanced GPS", "Parachute System"]
     },
     {
@@ -33,6 +34,7 @@
       "price": 150000,
       "Description": "High performance entry-level private aircraft.",
       "id": 5,
+      "popular": true,
       "features": ["5 seats", "Twin Engine", "Modern Cockpit Display", "Luxury Interior"]
     },
     {

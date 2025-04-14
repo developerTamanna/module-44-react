@@ -2,7 +2,7 @@ import React from 'react';
 import PricingFeatures from './PricingFeatures';
 
 const ProcingCart = ({ pricing }) => {
-    const { name, price, Description, features } = pricing;
+    const { name, price, Description, features , } = pricing;
 
     return (
         <div>

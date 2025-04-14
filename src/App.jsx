@@ -7,6 +7,7 @@ import Navbar from './components/Navbar/Navbar'
 // import { MdDescription } from 'react-icons/md'
 import { Suspense } from 'react'
 import PricingOptions from './components/PricingOptions/PricingOptions'
+import ResultChat from './components/DaisyPricing/ResultChart/ResultChat'
 
 
 const pricingPromise = fetch('pricingData.json').then(res=>res.json())
@@ -32,6 +33,11 @@ function App() {
    pricingPromise ={pricingPromise}
    ></PricingOptions>
     </Suspense>
+
+
+     <ResultChat></ResultChat>
+
+
    </main>
     </>
   )
